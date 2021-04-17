@@ -1,1 +1,1 @@
-# stl-file-parser
+# STL Surface Area Calculator
