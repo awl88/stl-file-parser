@@ -21,6 +21,9 @@ Surface Area:  {calculated surface area}
 
 This repo comes with two files to use for testing in the `files` subfolder, feel free to use either of these files, or your own ASCII STL file.
 
+
+This repo also uses the Jest testing library, to run the tests simply use `yarn test` on the command line.
+
 ### Design decisions
 
 To tackle this challenge, I first had to parse out the STL file and chose to split the data into arrays and subarrays. I used javascript and regex to accomplish this task. The file is initially parsed out to get each "loop", we count the number of loops found to get the total number of triangles in the STL file, We then split those "loops" into smaller arrays points that will make up a triangle, and finally split each of those points up into the 3 vertices that are needed to create that point. After the parsing of the file is finish the the structure of the array is as follows:
